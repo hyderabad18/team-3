@@ -5,7 +5,9 @@
 
 * Vineeth Rao Kanaparthi - [LinkedIn - https://www.linkedin.com/in/vineeth-kanaparthi/] - [gmail - vineeth0025@gmail.com] - [WhatsApp - 8125101651] - [Phone - 7981868152]
 
-
+* Mani Varsha Madhavareddygari - [LinkedIn - https://www.linkedin.com/in/manivarsha-madhavareddy-gari-3b5576132 ]
+                [gmail - mmanivarsha@gmail.com, manivarshastartuptrio@gmail.com]
+                [Mobile - 8374335357]
 
 
 
