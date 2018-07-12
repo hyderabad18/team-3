@@ -8,6 +8,9 @@
 * Mani Varsha Madhavareddygari - [LinkedIn - https://www.linkedin.com/in/manivarsha-madhavareddy-gari-3b5576132 ]
                 [gmail - mmanivarsha@gmail.com, manivarshastartuptrio@gmail.com]
                 [Mobile - 8374335357]
+                
+* Laxman Madipadige [Linkedin - https://www.linkedin.com/in/laxman-madipadige-912812119/] [gmail - laxman.madipadige@gmail.com] 
+                [Contact - 8099184060]
 
 
 
