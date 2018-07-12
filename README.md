@@ -1,15 +1,14 @@
 # Team-3
 
-***
 
 # Participants
 
-* Vineeth Rao Kanaparthi - [LinkedIn](https://www.linkedin.com/in/vineeth-kanaparthi/) - [gmail](vineeth0025@gmail.com) - [WhatsApp - 8125101651] - [Phone - 7981868152]
+* Vineeth Rao Kanaparthi - [LinkedIn - https://www.linkedin.com/in/vineeth-kanaparthi/] - [gmail - vineeth0025@gmail.com] - [WhatsApp - 8125101651] - [Phone - 7981868152]
 
 
 
 
-***
+
 
 # WorkFlow
 
