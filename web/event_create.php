@@ -40,17 +40,17 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="pending.html">
+          <a class="nav-link" href="pending.php">
             <span class="nav-link-text">Pending Invitations</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="events.html">
+          <a class="nav-link" href="events.php">
             <span class="nav-link-text">Events</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="tables.html">
+          <a class="nav-link" href="volunteers.php">
             <span class="nav-link-text">Volunteers</span>
           </a>
         </li>
@@ -72,13 +72,13 @@
             <form class="form-horizontal" role="form">
                 <h2>Registration Form</h2>
                 <div class="form-group">
-                    <label for="eventName" class="col-sm-3 control-label">Event Name</label>
+                    <label for="eventName" class="col-sm-3 control-label"><strong>Event Name</strong></label>
                     <div class="col-sm-9">
                         <input type="text" id="eventName" placeholder="Event Name" class="form-control" autofocus>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="location" class="col-sm-3 control-label">Location</label>
+                    <label for="location" class="col-sm-3 control-label"><strong>Location</strong></label>
                     <div class="col-sm-9">
                         <select id="location" class="form-control">
                             <option>Hyderabad</option>
@@ -93,16 +93,17 @@
                     </div>
                 </div> <!-- /.form-group -->
                 <div class="form-group">
-                    <label for="startDate" class="col-sm-3 control-label">Start Date</label>
+                    <label for="startDate" class="col-sm-3 control-label"><strong>Start Date</strong></label>
                     <div class="col-sm-9">
                         <input type="date" id="startDate" class="form-control">
                     </div>
                 </div>
                 <div class="form-group clockpicker">
-                    <label for="startTime" class="col-sm-3 control-label">Start Time</label>
+                    <label for="startTime" class="col-sm-3 control-label"><strong>Start Time</strong></label>
                     <!--<span class="input-group-addon">
                         <span class="glyphicon glyphicon-time"></span>
                     </span>-->
+                    <div class="col-sm-6">
                     <select name="hours">
                         <option value="1">1</option>
                         <option value="2">3</option>
@@ -127,6 +128,7 @@
                         <option value="AM">AM</option>
                         <option value="PM">PM</option>
                     </select>
+                    </div>
                 </div>
                 <!--<script type="text/javascript">
                 $('.clockpicker').clockpicker({
@@ -138,16 +140,17 @@
 
 
                 <div class="form-group">
-                    <label for="endDate" class="col-sm-3 control-label">End Date</label>
+                    <label for="endDate" class="col-sm-3 control-label"><strong>End Date</strong></label>
                     <div class="col-sm-9">
                         <input type="date" id="endDate" class="form-control">
                     </div>
                 </div>
                 <div class="form-group clockpicker">
-                    <label for="endTime" class="col-sm-3 control-label">End Time</label>
+                    <label for="endTime" class="col-sm-3 control-label"><strong>End Time</strong></label>
                     <!--<span class="input-group-addon">
                         <span class="glyphicon glyphicon-time"></span>
                     </span>-->
+                    <div class="col-sm-6">
                     <select name="hours">
                         <option value="1">1</option>
                         <option value="2">3</option>
@@ -172,6 +175,7 @@
                         <option value="AM">AM</option>
                         <option value="PM">PM</option>
                     </select>
+                    </div>
                 </div>
                 
                <!-- <script type="text/javascript">
@@ -179,7 +183,7 @@
                 </script>-->
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="image">Upload Image</label>
+                        <label for="image"><strong>Upload Image</strong></label>
                         <div class="input-group">
                             <span class="input-group-btn">
                                 <span class="btn btn-default btn-file">
@@ -188,6 +192,12 @@
                             </span>
                         </div>
                         <img id='img-upload'/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description" class="col-sm-3 control-label"><strong>Event Description</strong></label>
+                    <div class="col-sm-12">
+                    <textarea class="form-control" id="description" rows="3"></textarea>
                     </div>
                 </div>
                 <div class="form-group">

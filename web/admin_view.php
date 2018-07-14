@@ -38,17 +38,17 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="pending.html">
+          <a class="nav-link" href="pending.php">
             <span class="nav-link-text">Pending Invitations</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="events.html">
+          <a class="nav-link" href="events.php">
             <span class="nav-link-text">Events</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="tables.html">
+          <a class="nav-link" href="volunteers.php">
             <span class="nav-link-text">Volunteers</span>
           </a>
         </li>
@@ -74,7 +74,7 @@
         <div class="col-xl-3 col-sm-6 mb-3">
           <div class="card text-white bg-primary o-hidden h-100">
             <div class="card-body">
-              <div class="mr-5">26 New Messages!</div>
+              <div class="mr-5">26 New Volunteers!</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#">
               <span class="float-left">View Details</span>
@@ -87,7 +87,7 @@
         <div class="col-xl-3 col-sm-6 mb-3">
           <div class="card text-white bg-warning o-hidden h-100">
             <div class="card-body">
-              <div class="mr-5">11 New Tasks!</div>
+              <div class="mr-5">11 Active Events!!!</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#">
               <span class="float-left">View Details</span>
@@ -100,7 +100,7 @@
         <div class="col-xl-3 col-sm-6 mb-3">
           <div class="card text-white bg-success o-hidden h-100">
             <div class="card-body">
-              <div class="mr-5">123 New Orders!</div>
+              <div class="mr-5">1200 active colunteers!!!</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#">
               <span class="float-left">View Details</span>
@@ -113,7 +113,7 @@
         <div class="col-xl-3 col-sm-6 mb-3">
           <div class="card text-white bg-danger o-hidden h-100">
             <div class="card-body">
-              <div class="mr-5">13 New Tickets!</div>
+              <div class="mr-5">11,000 hours of service towards change!!!</div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#">
               <span class="float-left">View Details</span>
