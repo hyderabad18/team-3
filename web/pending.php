@@ -80,20 +80,21 @@
 </div>
 
 <!-- Tab content -->
-<div id="EDUCATION" class="tab">
+<div  id="EDUCATION" class="tab">
   <h3>EDUCATION</h3>
- <p> VOLUNTEER 1</p> 
- <p>event PENDING</p> 
+ <p margin-left: 50px> VOLUNTEER 1  &nbsp; event PENDING &nbsp;&nbsp;
  
- <label class="radio-inline"><input type="radio" name="optradio">ACCEPT</label>
-<label class="radio-inline"><input type="radio" name="optradio">REJECT</label>
-
+ <label class="radio-inline"><input type="radio" name="optradio" value="EDUCATION">ACCEPT</label>
+<label class="radio-inline"><input type="radio" name="optradio" value="EDUCATION">REJECT</label>
+</p>
 
 </div>
 
+
 <div id="HEALTH" class="tab">
   <h3>HEALTH</h3>
-  <p>VOLUNTEER 2</p>
+  <p margin-left: 100px> VOLUNTEER 2 &nbsp;&nbsp; event PENDING &nbsp;&nbsp;
+ 
   
 <label class="radio-inline"><input type="radio" name="optradio">ACCEPT</label>
 <label class="radio-inline"><input type="radio" name="optradio">REJECT</label>
@@ -103,7 +104,8 @@
 
 <div id="ENVIRONMENT" class="tab">
   <h3>ENVIRONMENT</h3>
-  <p>VOLUNTEER 3</p>
+  <p margin-left: 50px> VOLUNTEER 3  &nbsp;&nbsp; event PENDING &nbsp;&nbsp;
+ 
   <label class="radio-inline"><input type="radio" name="optradio">ACCEPT</label>
 <label class="radio-inline"><input type="radio" name="optradio">REJECT</label>
 
@@ -111,11 +113,21 @@
 
 <div id="ENABELEMENT" class="tab">
   <h3>ENABELEMENT</h3>
-  <p>VOLUNTEER 4</p>
+  <p margin-left: 50px> VOLUNTEER 4  &nbsp;&nbsp; event PENDING &nbsp;&nbsp;
+ 
   <label class="radio-inline"><input type="radio" name="optradio">ACCEPT</label>
 <label class="radio-inline"><input type="radio" name="optradio">REJECT</label>
 
 </div>
+
+<div id="ENVIRONMENT" class="tab">
+  <h3>ENVIRONMENT</h3>
+  <p margin-left: 50px> VOLUNTEER 3  &nbsp;&nbsp; event PENDING &nbsp;&nbsp;
+ 
+  <label class="radio-inline"><input type="radio" name="optradio">ACCEPT</label>
+<label class="radio-inline"><input type="radio" name="optradio">REJECT</label>
+
+</div> 
 
 <div id="EDUCATION" class="tab">
   <h3>EDUCATION</h3>
@@ -129,34 +141,25 @@
   <span onclick="this.parentElement.style.display='none'">x</span>
 </div>
 
-<div id="HEALTH" class="tab">
-  <h3>ENVIRONMENT</h3>
- <p>VOLUNTEER ADVANCED</p>
-  <span onclick="this.parentElement.style.display='none'">x</span>
-</div>
 
-<div id="HEALTH" class="tab">
-  <h3>ENABLEMENT</h3>
- <p>VOLUNTEER ADVANCED</p>
-  <span onclick="this.parentElement.style.display='none'">x</span>
-</div>
 
 	
-
-    </div>
+</div>
   </div>
+  
+
 
 
 
   <!--footer-->
 
-    <footer class="sticky-footer">
+    <!--<footer class="sticky-footer">-->
       <div class="container">
-        <div class="text-center">
+        <div class="footer">
           <small>Copyright © Your Website 2018</small>
         </div>
-      </div>
-    </footer>
+     </div>
+    
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
@@ -194,6 +197,7 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
+	<script src="js/app.js"></script>
   
 </body>
 
