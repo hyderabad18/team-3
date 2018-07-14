@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.progress) {
 
         } else if (id == R.id.pending) {
-            //startActivity(new Intent(MainActivity.this,PendingActivity.class));
+            startActivity(new Intent(MainActivity.this,PendingActivity.class));
 
         } else if (id == R.id.share) {
 

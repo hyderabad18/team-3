@@ -44,6 +44,7 @@
         <activity android:name="com.example.sai.cfg_youth4s.MainActivity" />
         <activity android:name="com.example.sai.cfg_youth4s.ResetPasswordActivity" />
         <activity android:name="com.example.sai.cfg_youth4s.AddEvents" />
+        <activity android:name="com.example.sai.cfg_youth4s.PendingActivity" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

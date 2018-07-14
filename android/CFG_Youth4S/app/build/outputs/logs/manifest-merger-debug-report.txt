@@ -572,6 +572,10 @@ activity#com.example.sai.cfg_youth4s.AddEvents
 ADDED from D:\Android\CFG_Y4S\team-3\android\CFG_Youth4S\app\src\main\AndroidManifest.xml:26:9-46
 	android:name
 		ADDED from D:\Android\CFG_Y4S\team-3\android\CFG_Youth4S\app\src\main\AndroidManifest.xml:26:19-44
+activity#com.example.sai.cfg_youth4s.PendingActivity
+ADDED from D:\Android\CFG_Y4S\team-3\android\CFG_Youth4S\app\src\main\AndroidManifest.xml:27:9-52
+	android:name
+		ADDED from D:\Android\CFG_Y4S\team-3\android\CFG_Youth4S\app\src\main\AndroidManifest.xml:27:19-50
 uses-sdk
 INJECTED from D:\Android\CFG_Y4S\team-3\android\CFG_Youth4S\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] D:\Android\CFG_Y4S\team-3\android\CFG_Youth4S\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\26.0.0-alpha1\AndroidManifest.xml:21:5-23:78

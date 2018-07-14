@@ -1,9 +1,11 @@
 package com.example.sai.cfg_youth4s;
 
+import java.util.ArrayList;
+
 /**
  * Created by sai on 14-07-2018.
  */
-public class EventDetails {
+public class EventDetails extends ArrayList<EventDetails>{
     private String imageurl;
     private String eventname;
     private String eventlocation;

@@ -164,6 +164,10 @@
         "source": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
+        "merged": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pending_events.xml",
+        "source": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\src\\main\\res\\layout\\pending_events.xml"
+    },
+    {
         "merged": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_dialog_title_material.xml"
     },
@@ -222,6 +226,10 @@
     {
         "merged": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
         "source": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pending.xml",
+        "source": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\src\\main\\res\\layout\\activity_pending.xml"
     },
     {
         "merged": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",

@@ -10,9 +10,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.io.IOException;
 import java.util.List;
@@ -23,6 +29,9 @@ import java.util.List;
 public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.MyViewHolder> {
 
     private FirebaseAuth firebaseAuth;
+    public String Database_Path = "Pending/";
+    private DatabaseReference mFirebaseDatabase;
+    private FirebaseDatabase mFirebaseInstance;
     Context context;
     private List<EventDetails> entries;
     private String userId,imageURL;
@@ -64,10 +73,72 @@ public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.MyVi
         holder.enroll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mFirebaseInstance = FirebaseDatabase.getInstance();
+                // get reference to 'users' node
+                mFirebaseDatabase = mFirebaseInstance.getReference(Database_Path);
+
+                userId = mFirebaseDatabase.push().getKey();
+
+                FirebaseDatabase.getInstance().getReference().child("Events").child("Education")
+                        .addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                    EventDetails user = snapshot.getValue(EventDetails.class);
+
+                                    if (holder.text.getText() == user.getEventname())
+                                    {
+                                        imageURL = user.getImageurl();
+
+                                        EventDetails details = new EventDetails(imageURL,holder.text.getText().toString(),holder.address.getText().toString(),holder.date.getText().toString(),holder.time.getText().toString());
+
+                                        mFirebaseDatabase.child(userId).child("imageurl").setValue(details.getImageurl());
+                                        mFirebaseDatabase.child(userId).child("eventname").setValue(details.getEventname());
+                                        mFirebaseDatabase.child(userId).child("location").setValue(details.getEventlocation());
+                                        mFirebaseDatabase.child(userId).child("date").setValue(details.getEventdate());
+                                        mFirebaseDatabase.child(userId).child("time").setValue(details.getEventtime());
+
+//                                            holder.cd.setVisibility(View.GONE);
+
+                                        addUserChangeListener();
+
+                                    }
+                                }
+                                //do what you want with the email
+                            }
+
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+
+                            }
+                        });
 
             }
         });
+    }
 
+    private void addUserChangeListener()
+    {
+        // User data change listener
+        mFirebaseDatabase.child(userId).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                EventDetails details = dataSnapshot.getValue(EventDetails.class);
+
+                // Check for null
+                if (details == null) {
+                    Toast.makeText(context, "Data is Null..", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                Toast.makeText(context, "Added to Wishlist", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Toast.makeText(context,error.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
