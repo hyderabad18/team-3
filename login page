@@ -1,2 +1,2 @@
-userid(email)
-pwd(registered)
+userid(email)(string(30))
+pwd(registered)(string(20))
