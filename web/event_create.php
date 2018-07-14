@@ -35,7 +35,7 @@
           </a>
         </li>
          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="create_event.php">
+          <a class="nav-link" href="event_create.php">
             <span class="nav-link-text">Create New Event</span>
           </a>
         </li>

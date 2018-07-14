@@ -17,7 +17,6 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
   <link rel="stylesheet" href="custom/clock/bootstrap-clockpicker.css" type="text/css">
   <link rel="stylesheet" href="custom/clock/jquery-clockpicker.css" type="text/css">
 </head>
@@ -73,59 +72,19 @@
         <div class="container-fluid">
             <div class="col-md-12">
                 <div class="row justify-content-center ">
-                    <h2 class="text-center col-sm-12">Active Events</h2>
+                    <h2 class="text-center col-sm-12">Volunteer Engagement</h2>
                     <div class="card col-sm-3 text-center" style="margin:15px 25px">
-                        <h4>NMSS</h4>
-                        <img class="card-img-top" src="http://via.placeholder.com/350x170" alt="Card image cap">
+                        <h4 class="name">Rajath</h4>
+                        
                         <div class="card-body">
-                            <p class="card-text"><strong>Description: </strong>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <p class="location">
-                            Hyderbad <span class="fa fa-map-marker"></span>
-                        </p>
-                        <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
-                    </div>
-                    <div class="card col-sm-3 text-center" style="margin:15px 25px">
-                        <h4>NMSS</h4>
-                        <img class="card-img-top" src="http://via.placeholder.com/350x170" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Description: </strong>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <p class="location">
-                            Hyderbad <span class="fa fa-map-marker"></span>
-                        </p>
-                        <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
-                    </div>
-                    <div class="card col-sm-3 text-center" style="margin:15px 25px">
-                        <h4>NMSS</h4>
-                        <img class="card-img-top" src="http://via.placeholder.com/350x170" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Description: </strong>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <p class="location">
-                            Hyderbad <span class="fa fa-map-marker"></span>
-                        </p>
-                        <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
-                    </div>
-                    <div class="card col-sm-3 text-center" style="margin:15px 25px">
-                        <h4>NMSS</h4>
-                        <img class="card-img-top" src="http://via.placeholder.com/350x170" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Description: </strong>Some quick example text to build on the card title and make up the bulk of the card's content.
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
-                            
-                            </p>
-                        </div>
-                        <p class="location">
-                            Hyderbad <span class="fa fa-map-marker"></span>
-                        </p>
-                        <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
-                    </div>
-                    <div class="card col-sm-3 text-center" style="margin:15px 25px">
-                        <h4>NMSS</h4>
-                        <img class="card-img-top" src="http://via.placeholder.com/350x170" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Description: </strong>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="hours"> No of Hours towards change: <strong>42</strong></p>
+                            <p class="totalEvents"> No of Events Participated: <strong>7</strong></p>
+                            <p class="ActiveEvents"> Active Events: <strong>2</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
                         </div>
                         <p class="location">
                             Hyderbad <span class="fa fa-map-marker"></span>
@@ -133,15 +92,140 @@
                         <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
                     </div>
 
-                    
-                    
-                    
-                    
+                    <div class="card col-sm-3 text-center" style="margin:15px 25px">
+                        <h4 class="name">Rajath</h4>
+                        
+                        <div class="card-body">
+                            <p class="hours"> No of Hours towards change: <strong>42</strong></p>
+                            <p class="totalEvents"> No of Events Participated: <strong>7</strong></p>
+                            <p class="ActiveEvents"> Active Events: <strong>2</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p class="location">
+                            Hyderbad <span class="fa fa-map-marker"></span>
+                        </p>
+                        <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
+                    </div>
 
+                    <div class="card col-sm-3 text-center" style="margin:15px 25px">
+                        <h4 class="name">Rajath</h4>
+                        
+                        <div class="card-body">
+                            <p class="hours"> No of Hours towards change: <strong>42</strong></p>
+                            <p class="totalEvents"> No of Events Participated: <strong>7</strong></p>
+                            <p class="ActiveEvents"> Active Events: <strong>2</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p class="location">
+                            Hyderbad <span class="fa fa-map-marker"></span>
+                        </p>
+                        <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
+                    </div>
+
+                    <div class="card col-sm-3 text-center" style="margin:15px 25px">
+                        <h4 class="name">Rajath</h4>
+                        
+                        <div class="card-body">
+                            <p class="hours"> No of Hours towards change: <strong>42</strong></p>
+                            <p class="totalEvents"> No of Events Participated: <strong>7</strong></p>
+                            <p class="ActiveEvents"> Active Events: <strong>2</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p class="location">
+                            Hyderbad <span class="fa fa-map-marker"></span>
+                        </p>
+                        <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
+                    </div>
+
+                    <div class="card col-sm-3 text-center" style="margin:15px 25px">
+                        <h4 class="name">Rajath</h4>
+                        
+                        <div class="card-body">
+                            <p class="hours"> No of Hours towards change: <strong>42</strong></p>
+                            <p class="totalEvents"> No of Events Participated: <strong>7</strong></p>
+                            <p class="ActiveEvents"> Active Events: <strong>2</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p class="location">
+                            Hyderbad <span class="fa fa-map-marker"></span>
+                        </p>
+                        <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
+                    </div>
+
+                    <div class="card col-sm-3 text-center" style="margin:15px 25px">
+                        <h4 class="name">Rajath</h4>
+                        
+                        <div class="card-body">
+                            <p class="hours"> No of Hours towards change: <strong>42</strong></p>
+                            <p class="totalEvents"> No of Events Participated: <strong>7</strong></p>
+                            <p class="ActiveEvents"> Active Events: <strong>2</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p class="location">
+                            Hyderbad <span class="fa fa-map-marker"></span>
+                        </p>
+                        <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
+                    </div>
+
+                    <div class="card col-sm-3 text-center" style="margin:15px 25px">
+                        <h4 class="name">Rajath</h4>
+                        
+                        <div class="card-body">
+                            <p class="hours"> No of Hours towards change: <strong>42</strong></p>
+                            <p class="totalEvents"> No of Events Participated: <strong>7</strong></p>
+                            <p class="ActiveEvents"> Active Events: <strong>2</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p class="location">
+                            Hyderbad <span class="fa fa-map-marker"></span>
+                        </p>
+                        <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
+                    </div>
+
+                    <div class="card col-sm-3 text-center" style="margin:15px 25px">
+                        <h4 class="name">Rajath</h4>
+                        
+                        <div class="card-body">
+                            <p class="hours"> No of Hours towards change: <strong>42</strong></p>
+                            <p class="totalEvents"> No of Events Participated: <strong>7</strong></p>
+                            <p class="ActiveEvents"> Active Events: <strong>2</strong></p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p class="location">
+                            Hyderbad <span class="fa fa-map-marker"></span>
+                        </p>
+                        <button type="button" class="btn  btn-success" style="margin:10px 5px;" data-toggle="modal" data-target="#details1">Details</button>
+                    </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 
