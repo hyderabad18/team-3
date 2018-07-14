@@ -3022,6 +3022,7 @@ containing a value of this type.
         public static final int listitem=0x7f0d0097;
         public static final int loc=0x7f0d007f;
         public static final int login=0x7f0d008e;
+        public static final int logout=0x7f0d00c8;
         public static final int main_layout=0x7f0d009c;
         public static final int masked=0x7f0d00c3;
         public static final int media_actions=0x7f0d00b2;
@@ -3071,7 +3072,6 @@ containing a value of this type.
         public static final int search_voice_btn=0x7f0d0079;
         public static final int select=0x7f0d007b;
         public static final int select_dialog_listview=0x7f0d007a;
-        public static final int send=0x7f0d00c8;
         public static final int share=0x7f0d00c7;
         public static final int shortcut=0x7f0d0064;
         public static final int showCustom=0x7f0d0016;

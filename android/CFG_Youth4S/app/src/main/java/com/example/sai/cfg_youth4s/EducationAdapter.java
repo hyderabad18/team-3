@@ -29,7 +29,7 @@ import java.util.List;
 public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.MyViewHolder> {
 
     private FirebaseAuth firebaseAuth;
-    public String Database_Path = "Pending/";
+    public String Database_Path = "Users/";
     private DatabaseReference mFirebaseDatabase;
     private FirebaseDatabase mFirebaseInstance;
     Context context;
@@ -73,9 +73,11 @@ public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.MyVi
         holder.enroll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String key = firebaseAuth.getCurrentUser().getEmail();
+                key = key.replaceAll("[^\\w\\s]","");
                 mFirebaseInstance = FirebaseDatabase.getInstance();
                 // get reference to 'users' node
-                mFirebaseDatabase = mFirebaseInstance.getReference(Database_Path);
+                mFirebaseDatabase = mFirebaseInstance.getReference(Database_Path).child(key).child("pending");
 
                 userId = mFirebaseDatabase.push().getKey();
 
@@ -130,7 +132,7 @@ public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.MyVi
                     Toast.makeText(context, "Data is Null..", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Toast.makeText(context, "Added to Wishlist", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Enrolled Successfully", Toast.LENGTH_SHORT).show();
             }
 
             @Override

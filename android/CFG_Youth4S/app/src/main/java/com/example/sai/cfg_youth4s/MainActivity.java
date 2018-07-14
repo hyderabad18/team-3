@@ -125,7 +125,10 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.share) {
 
-        } else if (id == R.id.send) {
+        } else if (id == R.id.logout) {
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(MainActivity.this,LoginActivity.class));
+            Toast.makeText(getApplicationContext(), "LoggedOut", Toast.LENGTH_SHORT).show();
 
         }
 

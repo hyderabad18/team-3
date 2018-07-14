@@ -862,6 +862,7 @@ int id list_item 0x7f0d0050
 int id listitem 0x7f0d0097
 int id loc 0x7f0d007f
 int id login 0x7f0d008e
+int id logout 0x7f0d00c8
 int id main_layout 0x7f0d009c
 int id masked 0x7f0d00c3
 int id media_actions 0x7f0d00b2
@@ -911,7 +912,6 @@ int id search_src_text 0x7f0d0075
 int id search_voice_btn 0x7f0d0079
 int id select 0x7f0d007b
 int id select_dialog_listview 0x7f0d007a
-int id send 0x7f0d00c8
 int id share 0x7f0d00c7
 int id shortcut 0x7f0d0064
 int id showCustom 0x7f0d0016
