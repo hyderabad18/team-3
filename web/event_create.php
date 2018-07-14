@@ -16,6 +16,8 @@
   <link href="custom/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="custom/clock/bootstrap-clockpicker.css" type="text/css">
+  <link rel="stylesheet" href="custom/clock/jquery-clockpicker.css" type="text/css">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -67,9 +69,139 @@
   <!-- content -->
   <div class="content-wrapper">
     <div class="container-fluid">
+            <form class="form-horizontal" role="form">
+                <h2>Registration Form</h2>
+                <div class="form-group">
+                    <label for="eventName" class="col-sm-3 control-label">Event Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="eventName" placeholder="Event Name" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="location" class="col-sm-3 control-label">Location</label>
+                    <div class="col-sm-9">
+                        <select id="location" class="form-control">
+                            <option>Hyderabad</option>
+                            <option>Banglore</option>
+                            <option>Mumbai</option>
+                            <option>Culcutta</option>
+                            <option>Chennai</option>
+                            <option>New Delhi</option>
+                            <option>Cochin</option>
+                            <option>Vishakaptnam</option>
+                        </select>
+                    </div>
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                    <label for="startDate" class="col-sm-3 control-label">Start Date</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="startDate" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group clockpicker">
+                    <label for="startTime" class="col-sm-3 control-label">Start Time</label>
+                    <!--<span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>-->
+                    <select name="hours">
+                        <option value="1">1</option>
+                        <option value="2">3</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select> 
+                    <select name="mins">
+                        <option value="00">00</option>
+                        <option value="15">15</option>
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                    </select> 
+                    <select name="ampm" id="ampm">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <!--<script type="text/javascript">
+                $('.clockpicker').clockpicker({
+                    placement: 'top',
+                    align: 'left',
+                    donetext: 'Done'
+                });
+                </script>-->
 
-    </div>
+
+                <div class="form-group">
+                    <label for="endDate" class="col-sm-3 control-label">End Date</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="endDate" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group clockpicker">
+                    <label for="endTime" class="col-sm-3 control-label">End Time</label>
+                    <!--<span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>-->
+                    <select name="hours">
+                        <option value="1">1</option>
+                        <option value="2">3</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select> 
+                    <select name="mins">
+                        <option value="00">00</option>
+                        <option value="15">15</option>
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                    </select> 
+                    <select name="ampm" id="ampm">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                
+               <!-- <script type="text/javascript">
+                $('.clockpicker').clockpicker();
+                </script>-->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="image">Upload Image</label>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <span class="btn btn-default btn-file">
+                                    <input type="file" id="imgInp">
+                                </span>
+                            </span>
+                        </div>
+                        <img id='img-upload'/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </div>
+                </div>
+            </form> <!-- /form -->
+
+
+    </div><!-- container fluid-->
   </div>
+
+
 
 
 
@@ -119,6 +251,8 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
+    <script src="custom/clock/bootstrap-clockpicker.js"></script>
+    <script src="custom/clock/jquery-clockpicker.js"></script>
   
 </body>
 
