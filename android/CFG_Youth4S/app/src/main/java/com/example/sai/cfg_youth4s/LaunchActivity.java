@@ -19,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LaunchActivity extends AppCompatActivity {
     private Button signin,regiser;
     private FirebaseAuth firebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthListener;
     private EditText email,pwd;
 
     @Override
@@ -95,5 +96,13 @@ public class LaunchActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent a = new Intent(Intent.ACTION_MAIN);
+        a.addCategory(Intent.CATEGORY_HOME);
+        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(a);
     }
 }
