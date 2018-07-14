@@ -1,5 +1,5 @@
-name
-location**(* for firat time login)
-event (preference)
-event (allocation)
+name ((string (30))
+location**(* for firat time login)(string(50))
+event (preference)(number)
+event (allocation)(number)
 
