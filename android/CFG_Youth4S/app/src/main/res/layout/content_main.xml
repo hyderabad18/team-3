@@ -12,6 +12,16 @@ tools:showIn="@layout/app_bar_main">
     <android.support.v4.view.ViewPager
     android:id="@+id/pager"
     android:layout_width="match_parent"
-    android:layout_height="fill_parent" />
+    android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+    android:layout_below="@+id/appbarlayout"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/add"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
 
 </RelativeLayout>

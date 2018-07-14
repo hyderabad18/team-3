@@ -1,26 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+        "merged": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_media_action.xml"
     },
     {
-        "merged": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_media_cancel_action.xml"
+        "merged": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media_custom.xml"
+        "merged": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
     },
     {
-        "merged": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+        "merged": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
-        "source": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media.xml"
+        "merged": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media_custom.xml"
     },
     {
-        "merged": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
-        "source": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_media_action.xml"
+        "merged": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media.xml"
     }
 ]

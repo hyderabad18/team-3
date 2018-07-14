@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\values-port\\values-port.xml",
+        "outputFile": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\values-port\\values-port.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 106
                 },
                 "from": {
-                    "file": "C:\\Users\\Sunny\\Documents\\GitHub\\JPMC_CFG\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\values-port\\values-port.xml",
+                    "file": "D:\\Android\\CFG_Y4S\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\values-port\\values-port.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

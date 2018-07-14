@@ -1,7 +1,9 @@
 package com.example.sai.cfg_youth4s;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -33,6 +35,11 @@ public class LaunchActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         if (firebaseAuth.getCurrentUser() != null)
         {
+            String user = firebaseAuth.getCurrentUser().getEmail();
+            SharedPreferences preferences1 = PreferenceManager.getDefaultSharedPreferences(LaunchActivity.this);
+            SharedPreferences.Editor editor = preferences1.edit();
+            editor.putString("email",user);
+            editor.commit();
             startActivity(new Intent(LaunchActivity.this, MainActivity.class));
         }
 
