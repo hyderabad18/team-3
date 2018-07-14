@@ -1,7 +1,9 @@
 package com.example.sai.cfg_youth4s;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -15,12 +17,19 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class LaunchActivity extends AppCompatActivity {
     private Button signin,regiser;
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private EditText email,pwd;
+    private DatabaseReference databaseReference,ref1;
+    private FirebaseDatabase firebaseDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +42,11 @@ public class LaunchActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         if (firebaseAuth.getCurrentUser() != null)
         {
+            String user = firebaseAuth.getCurrentUser().getEmail();
+            SharedPreferences preferences1 = PreferenceManager.getDefaultSharedPreferences(LaunchActivity.this);
+            SharedPreferences.Editor editor = preferences1.edit();
+            editor.putString("email",user);
+            editor.commit();
             startActivity(new Intent(LaunchActivity.this, MainActivity.class));
         }
 
@@ -85,9 +99,35 @@ public class LaunchActivity extends AppCompatActivity {
                                             Toast.LENGTH_SHORT).show();
                                 } else {
                                     Intent intent = new Intent(LaunchActivity.this, MainActivity.class);
-//                                    Bundle b = new Bundle();
-//                                    b.putString("Username", ed1);
-//                                    intent.putExtras(b);
+                                    Bundle b = new Bundle();
+                                    b.putString("Username", ed1);
+                                    intent.putExtras(b);
+                                    firebaseDatabase = FirebaseDatabase.getInstance();
+                                    databaseReference = firebaseDatabase.getReference();
+                                    String parsed_email = ed1.replaceAll("[^\\w\\s]","");
+                                    ref1 = FirebaseDatabase.getInstance().getReference().child("Users").child(parsed_email);
+                                    FirebaseDatabase.getInstance().getReference().child("Users").child(parsed_email).
+                                           addListenerForSingleValueEvent(new ValueEventListener() {
+                                        @Override
+                                        public void onDataChange(DataSnapshot dataSnapshot) {
+                                            User users = dataSnapshot.getValue(User.class);
+
+                                            User user1 = new User();
+                                            ref1.child("name").setValue(user1.getName());
+                                            ref1.child("dob").setValue(user1.getDob());
+                                            ref1.child("gender").setValue(user1.getGender());
+                                            ref1.child("location").setValue(user1.getLocation());
+                                            ref1.child("hours").setValue(user1.getHours());
+                                            ref1.child("completed").setValue(user1.getCompleted());
+                                            ref1.child("ongoing").setValue(user1.getOngoing());
+                                            ref1.child("pending").setValue(user1.getPending());
+                                        }
+
+                                        @Override
+                                        public void onCancelled(DatabaseError databaseError) {
+
+                                        }
+                                    });
                                     startActivity(intent);
                                 }
                             }

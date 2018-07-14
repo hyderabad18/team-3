@@ -23,7 +23,8 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ResetPasswordActivity"/>
-
+        <activity android:name=".AddEvents"/>
+        <activity android:name=".PendingActivity"/>
 
     </application>
 
