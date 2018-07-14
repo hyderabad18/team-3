@@ -1,0 +1,5 @@
+name ((string (30))
+location**(* for first time login)(string(20))
+event (preference)(number(2))
+event (allocation)(number(2))
+
