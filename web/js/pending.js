@@ -1,9 +1,4 @@
-document.querySelector('.accept')
-  .addEventListener("click", function( event ) {  
-    event.preventDefault();
-    document.querySelector('.accept').innerHTML = "Accepted";
-    document.querySelector('.reject').style.display="none";
-}, false);
+
 
 
 
@@ -24,6 +19,8 @@ var db = firebase.database();
 
 var userRef = db.ref('Users');
 
+var counter = 0;
+
 userRef.once("value")
 .then(function(snapshot) {
     
@@ -33,6 +30,7 @@ userRef.once("value")
 
     snapshot.forEach(renderSingleSnapshot);
 });
+
 
 
 var renderSingleSnapshot = function(singleSnapshot){
@@ -73,6 +71,7 @@ for (event in val.pending){
   //      console.log(event);
     //    console.log(val.pending[event]);
         if(val.pending[event].status == '0'){
+            counter = counter + 1;
             document.querySelector('.requests').innerHTML += contactHtmlFromObject(val, val.pending[event], key, event);
           }
     }
@@ -95,7 +94,7 @@ for (event in val.pending){
       console.log(event);
       console.log("------------------------")
       var html = '';
-      html += '<div class="card col-sm-3 text-center" style="margin:15px 25px">';
+      html += '<div class="card col-sm-3 text-center" id='+counter.toString()+' style="margin:15px 25px">';
       html += '<div class="card-body">';
       html += '<h4 class="name">' + val.name + '</h4>';
       html += '<span id="user_id" value='+key+' style="visibility:hidden"></span>';
@@ -104,12 +103,18 @@ for (event in val.pending){
       html += '<p class="totalEvents"> <strong>Event</strong>:' + data.eventname + '</p>';
       html += '<p class="location"><strong>Event Location</strong>: ' + data.eventlocation + '<span class="fa fa-map-marker"></span></p>';
       html += '</div>';
-      html += '<button type="button" class="btn  btn-success accept" style="margin: 5px 5px"><span class="fa fa-check"></span>Accept</button>';
+      html += '<button type="button" class="btn  btn-success accept" style="margin: 5px 5px" onClick="triggerFlip(this);"><span class="fa fa-check"></span>Accept</button>';
       html += '<button type="button" class="btn btn-danger reject" style="margin:5px 5px"><span class="fa fa-times"></span>Reject</button>';
 
       return html;
   }
 
+function triggerFlip(element)
+{
+    console.log(element);
+    element.innerHTML="Accepted";
+    element.nextSibling.style.display="none";
+}
 
 
 
@@ -132,12 +137,20 @@ for (event in val.pending){
 
 
 
-
-
+/*
 
 document.querySelector('.accept')
   .addEventListener("click", function( event ) {  
     event.preventDefault();
     document.querySelector('.accept').innerHTML = "Accepted";
     document.querySelector('.reject').style.display="none";
-}, false);
+}, false);*/
+// for(i=1;i<=counter;i++){
+//     document.querySelector('#'+i.toString())
+//     .addEventListener("click", function( event ) {  
+//         event.preventDefault();
+//         document.querySelector('.accept').innerHTML = "Accepted";
+//         document.querySelector('.reject').style.display="none";
+//     }, false);
+
+// }
