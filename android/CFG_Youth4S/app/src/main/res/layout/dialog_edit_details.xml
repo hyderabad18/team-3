@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        android:backgroundTint="#000000" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth (DD-MM-YYYY)"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/Name"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#000000"
+        android:textColorHint="#000000"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:hint="Gender"
+        android:maxLines="1"
+        android:textColorHint="#000000"
+        android:inputType="number"
+        android:backgroundTint="#000000"
+        android:layout_margin="15dp"/>
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:hint="Location"
+        android:maxLines="1"
+        android:textColorHint="#000000"
+        android:inputType="number"
+        android:backgroundTint="#000000"
+        android:layout_margin="15dp"/>
+    <EditText
+        android:id="@+id/hrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:hint="Working Hours"
+        android:maxLines="1"
+        android:textColorHint="#000000"
+        android:inputType="number"
+        android:backgroundTint="#000000"
+        android:layout_margin="15dp"/>
+</RelativeLayout>

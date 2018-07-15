@@ -23,6 +23,7 @@ import java.util.ArrayList;
  * Created by sai on 14-07-2018.
  */
 public class CompletedActivity extends AppCompatActivity {
+
     ListView lv;
     FirebaseAuth firebaseAuth;
     FirebaseDatabase firebaseDatabase;

@@ -25,6 +25,8 @@
         <activity android:name=".ResetPasswordActivity"/>
         <activity android:name=".AddEvents"/>
         <activity android:name=".PendingActivity"/>
+        <activity android:name=".ProfileActivity"/>
+
 
     </application>
 
