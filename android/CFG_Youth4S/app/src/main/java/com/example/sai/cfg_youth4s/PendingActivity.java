@@ -1,5 +1,6 @@
 package com.example.sai.cfg_youth4s;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
@@ -46,7 +47,7 @@ public class PendingActivity extends AppCompatActivity{
         Toast.makeText(PendingActivity.this,email, Toast.LENGTH_SHORT).show();
 
         firebaseDatabase=FirebaseDatabase.getInstance();
-        databaseReference=firebaseDatabase.getReference("Users").child(email).child("pending");
+        databaseReference=firebaseDatabase.getReference("Users").child(email).child("events");
 
         String userid = databaseReference.push().getKey();
 
@@ -59,9 +60,10 @@ public class PendingActivity extends AppCompatActivity{
                 for(DataSnapshot ds:dataSnapshot.getChildren())
                 {
                     uploadInfo = ds.getValue(EventDetails.class);
-                    arrayList.add(new EventDetails(uploadInfo.getImageurl(),uploadInfo.getEventname(),uploadInfo.getEventlocation(),uploadInfo.getEventdate(),uploadInfo.getEventtime()));
+                    arrayList.add(new EventDetails(uploadInfo.getImageurl(),uploadInfo.getEventname(),uploadInfo.getEventlocation(),uploadInfo.getStartdate(),uploadInfo.getStarttime()));
                 }
-
+                if(arrayList.isEmpty())
+                    startActivity(new Intent(PendingActivity.this,MainActivity.class));
                 for (EventDetails event : arrayList) {
                     boolean isFound = false;
                     // check if the event name exists in noRepeat

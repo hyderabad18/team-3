@@ -9,11 +9,31 @@ public class EventDetails extends ArrayList<EventDetails>{
     private String imageurl;
     private String eventname;
     private String eventlocation;
-    private String eventdate;
-    private String eventtime;
+    private String startdate;
+    private String starttime;
+    private String enddate;
+    private String eventdesc;
 
-    public EventDetails()
-    {
+    public EventDetails() {
+
+    }
+
+    public EventDetails(String imageurl, String eventname, String eventlocation, String startdate, String starttime, String enddate, String eventdesc) {
+        this.imageurl = imageurl;
+        this.eventname = eventname;
+        this.eventlocation = eventlocation;
+        this.startdate = startdate;
+        this.starttime = starttime;
+        this.enddate = enddate;
+        this.eventdesc = eventdesc;
+    }
+
+    public EventDetails(String imageurl, String eventname, String eventlocation, String startdate, String starttime) {
+        this.imageurl  = imageurl;
+        this.eventname = eventname;
+        this.eventlocation = eventlocation;
+        this.startdate = startdate;
+        this.starttime = starttime;
 
     }
 
@@ -33,14 +53,6 @@ public class EventDetails extends ArrayList<EventDetails>{
         this.eventname = eventname;
     }
 
-    public EventDetails(String imageurl, String eventname, String eventlocation, String eventdate, String eventtime) {
-        this.imageurl = imageurl;
-        this.eventname = eventname;
-        this.eventlocation = eventlocation;
-        this.eventdate = eventdate;
-        this.eventtime = eventtime;
-    }
-
     public String getEventlocation() {
         return eventlocation;
     }
@@ -49,19 +61,35 @@ public class EventDetails extends ArrayList<EventDetails>{
         this.eventlocation = eventlocation;
     }
 
-    public String getEventdate() {
-        return eventdate;
+    public String getStartdate() {
+        return startdate;
     }
 
-    public void setEventdate(String eventdate) {
-        this.eventdate = eventdate;
+    public void setStartdate(String startdate) {
+        this.startdate = startdate;
     }
 
-    public String getEventtime() {
-        return eventtime;
+    public String getStarttime() {
+        return starttime;
     }
 
-    public void setEventtime(String eventtime) {
-        this.eventtime = eventtime;
+    public void setStarttime(String starttime) {
+        this.starttime = starttime;
+    }
+
+    public String getEnddate() {
+        return enddate;
+    }
+
+    public void setEnddate(String enddate) {
+        this.enddate = enddate;
+    }
+
+    public String getEventdesc() {
+        return eventdesc;
+    }
+
+    public void setEventdesc(String eventdesc) {
+        this.eventdesc = eventdesc;
     }
 }

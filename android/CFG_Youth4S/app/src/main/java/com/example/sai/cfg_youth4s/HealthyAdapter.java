@@ -60,8 +60,8 @@ public class HealthyAdapter extends RecyclerView.Adapter<HealthyAdapter.MyViewHo
 
         holder.text.setText(eventDetails.getEventname());
         holder.address.setText(eventDetails.getEventlocation());
-        holder.date.setText(eventDetails.getEventdate());
-        holder.time.setText(eventDetails.getEventtime());
+        holder.date.setText(eventDetails.getStartdate());
+        holder.time.setText(eventDetails.getStarttime());
         Glide.with(context).load(eventDetails.getImageurl()).into(holder.image);
 
         holder.cd.setOnClickListener(new View.OnClickListener() {
@@ -98,8 +98,8 @@ public class HealthyAdapter extends RecyclerView.Adapter<HealthyAdapter.MyViewHo
                                         mFirebaseDatabase.child(userId).child("imageurl").setValue(details.getImageurl());
                                         mFirebaseDatabase.child(userId).child("eventname").setValue(details.getEventname());
                                         mFirebaseDatabase.child(userId).child("location").setValue(details.getEventlocation());
-                                        mFirebaseDatabase.child(userId).child("date").setValue(details.getEventdate());
-                                        mFirebaseDatabase.child(userId).child("time").setValue(details.getEventtime());
+                                        mFirebaseDatabase.child(userId).child("date").setValue(details.getStartdate());
+                                        mFirebaseDatabase.child(userId).child("time").setValue(details.getStarttime());
 
 //                                            holder.cd.setVisibility(View.GONE);
 

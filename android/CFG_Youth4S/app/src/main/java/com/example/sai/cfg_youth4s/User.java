@@ -11,9 +11,7 @@ public class User extends ArrayList<User>{
     private String gender;
     private String location;
     private String hours;
-    private String completed;
-    private String pending;
-    private String ongoing;
+    private String event;
 
     public User()
     {
@@ -22,21 +20,33 @@ public class User extends ArrayList<User>{
         gender="";
         location="";
         hours="";
-        completed="";
-        pending="";
-        ongoing="";
+        event="";
     }
 
 
-    public User(String name, String dob, String gender, String location, String hours, String completed, String pending, String ongoing) {
+    public String getEvent() {
+        return event;
+    }
+
+    public void setEvent(String event) {
+        this.event = event;
+    }
+
+    public User(String name, String dob, String gender, String location, String hours, String event) {
         this.name = name;
         this.dob = dob;
         this.gender = gender;
         this.location = location;
         this.hours = hours;
-        this.completed = completed;
-        this.pending = pending;
-        this.ongoing = ongoing;
+        this.event=event;
+    }
+
+    public User(String name, String dob, String gender, String location, String hours) {
+        this.name = name;
+        this.dob = dob;
+        this.gender = gender;
+        this.location = location;
+        this.hours = hours;
     }
 
     public String getName() {
@@ -80,27 +90,4 @@ public class User extends ArrayList<User>{
         this.hours = hours;
     }
 
-    public String getCompleted() {
-        return completed;
-    }
-
-    public void setCompleted(String completed) {
-        this.completed = completed;
-    }
-
-    public String getPending() {
-        return pending;
-    }
-
-    public void setPending(String pending) {
-        this.pending = pending;
-    }
-
-    public String getOngoing() {
-        return ongoing;
-    }
-
-    public void setOngoing(String ongoing) {
-        this.ongoing = ongoing;
-    }
 }

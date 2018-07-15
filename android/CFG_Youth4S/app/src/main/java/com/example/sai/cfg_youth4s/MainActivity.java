@@ -118,8 +118,9 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.complete) {
             // Handle the camera action
+            startActivity(new Intent(MainActivity.this,CompletedActivity.class));
         } else if (id == R.id.progress) {
-
+            startActivity(new Intent(MainActivity.this,OngoingActivity.class));
         } else if (id == R.id.pending) {
             startActivity(new Intent(MainActivity.this,PendingActivity.class));
 

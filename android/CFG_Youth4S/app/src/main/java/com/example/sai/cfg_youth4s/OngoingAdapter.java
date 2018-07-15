@@ -63,7 +63,7 @@ public class OngoingAdapter extends BaseAdapter{
 
         clear(listitem);
 
-        FirebaseDatabase.getInstance().getReference().child("Users").child(email).child("completed").
+        FirebaseDatabase.getInstance().getReference().child("Users").child(email).child("events").orderByChild("status").equalTo("1").
                 addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {

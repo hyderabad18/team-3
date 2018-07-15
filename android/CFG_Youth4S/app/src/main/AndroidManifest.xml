@@ -26,6 +26,9 @@
         <activity android:name=".AddEvents"/>
         <activity android:name=".PendingActivity"/>
         <activity android:name=".ProfileActivity"/>
+        <activity android:name=".OngoingActivity"/>
+        <activity android:name=".CompletedActivity"/>
+
 
 
     </application>

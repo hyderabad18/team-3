@@ -118,9 +118,7 @@ public class LaunchActivity extends AppCompatActivity {
                                             ref1.child("gender").setValue(user1.getGender());
                                             ref1.child("location").setValue(user1.getLocation());
                                             ref1.child("hours").setValue(user1.getHours());
-                                            ref1.child("completed").setValue(user1.getCompleted());
-                                            ref1.child("ongoing").setValue(user1.getOngoing());
-                                            ref1.child("pending").setValue(user1.getPending());
+                                            ref1.child("events").setValue(user1.getEvent());
                                         }
 
                                         @Override

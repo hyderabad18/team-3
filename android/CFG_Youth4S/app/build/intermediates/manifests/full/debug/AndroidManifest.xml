@@ -46,6 +46,8 @@
         <activity android:name="com.example.sai.cfg_youth4s.AddEvents" />
         <activity android:name="com.example.sai.cfg_youth4s.PendingActivity" />
         <activity android:name="com.example.sai.cfg_youth4s.ProfileActivity" />
+        <activity android:name="com.example.sai.cfg_youth4s.OngoingActivity" />
+        <activity android:name="com.example.sai.cfg_youth4s.CompletedActivity" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -54,19 +53,14 @@ public class ProfileActivity extends AppCompatActivity {
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                Toast.makeText(ProfileActivity.this,dataSnapshot.toString(), Toast.LENGTH_SHORT).show();
-                    User user = dataSnapshot.getValue(User.class);
-                    name.setText(user.getName().toString());
-                    dob.setText(user.getDob().toString());
-                    gender.setText(user.getGender().toString());
-                    location.setText(user.getLocation().toString());
-                    hrs.setText(user.getHours().toString());
-//                databaseReference.child("name").setValue(user.getName());
-//                databaseReference.child("dob").setValue(DOB.getText().toString());
-//                databaseReference.child("gender").setValue(gender.getText().toString());
-//                databaseReference.child("location").setValue(location.getText().toString());
-//                databaseReference.child("hrs").setValue(hrs.getText().toString());
-
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    //Map<String, User> map = (Map<String, User>) dataSnapshot.getValue();
+                    name.setText("hi");
+                    dob.setText("hi");
+                    gender.setText("hi");
+                    location.setText("hi");
+                    hrs.setText("hi");
+                }
             }
             @Override
             public void onCancelled(DatabaseError databaseError) {

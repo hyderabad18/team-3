@@ -4,6 +4,7 @@ package com.example.sai.cfg_youth4s;
  * Created by sai on 14-07-2018.
  */
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
@@ -30,7 +31,7 @@ public class CompletedActivity extends AppCompatActivity {
     DatabaseReference databaseReference;
     ArrayList<EventDetails> arrayList;
     ArrayList<EventDetails> NewarrayList = new ArrayList<>();
-    PendingAdapter arrayAdapter;
+    CompletedAdapter arrayAdapter;
     EventDetails uploadInfo;
 
     @Override
@@ -51,12 +52,12 @@ public class CompletedActivity extends AppCompatActivity {
         Toast.makeText(CompletedActivity.this,email, Toast.LENGTH_SHORT).show();
 
         firebaseDatabase=FirebaseDatabase.getInstance();
-        databaseReference=firebaseDatabase.getReference("Users").child(email).child("completed");
+        databaseReference=firebaseDatabase.getReference("Users").child(email).child("events");
 
         String userid = databaseReference.push().getKey();
 
         arrayList = new ArrayList<>();
-        arrayAdapter = new PendingAdapter(this,uploadInfo);
+        arrayAdapter = new CompletedAdapter(this,uploadInfo);
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -64,9 +65,10 @@ public class CompletedActivity extends AppCompatActivity {
                 for(DataSnapshot ds:dataSnapshot.getChildren())
                 {
                     uploadInfo = ds.getValue(EventDetails.class);
-                    arrayList.add(new EventDetails(uploadInfo.getImageurl(),uploadInfo.getEventname(),uploadInfo.getEventlocation(),uploadInfo.getEventdate(),uploadInfo.getEventtime()));
+                    arrayList.add(new EventDetails(uploadInfo.getImageurl(),uploadInfo.getEventname(),uploadInfo.getEventlocation(),uploadInfo.getStartdate(),uploadInfo.getStarttime()));
                 }
-
+                if(arrayList.isEmpty())
+                    startActivity(new Intent(CompletedActivity.this,MainActivity.class));
                 for (EventDetails event : arrayList) {
                     boolean isFound = false;
                     // check if the event name exists in noRepeat
@@ -78,7 +80,8 @@ public class CompletedActivity extends AppCompatActivity {
                     }
                     if(!isFound) NewarrayList.add(event);
                 }
-                arrayAdapter = new PendingAdapter(getApplicationContext(),NewarrayList);
+
+                arrayAdapter = new CompletedAdapter(getApplicationContext(),NewarrayList);
                 lv.setAdapter(arrayAdapter);
             }
 

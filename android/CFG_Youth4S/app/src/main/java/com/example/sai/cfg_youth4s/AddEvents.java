@@ -243,8 +243,8 @@ public class AddEvents extends AppCompatActivity{
                                     ref1.child(ImageUploadId).child("imageurl").setValue(details.getImageurl());
                                     ref1.child(ImageUploadId).child("eventname").setValue(details.getEventname());
                                     ref1.child(ImageUploadId).child("eventlocation").setValue(details.getEventlocation());
-                                    ref1.child(ImageUploadId).child("eventdate").setValue(details.getEventdate());
-                                    ref1.child(ImageUploadId).child("eventtime").setValue(details.getEventtime());
+                                    ref1.child(ImageUploadId).child("eventdate").setValue(details.getStartdate());
+                                    ref1.child(ImageUploadId).child("eventtime").setValue(details.getStarttime());
 
                                     // Adding image upload id s child element into databaseReference.
 
