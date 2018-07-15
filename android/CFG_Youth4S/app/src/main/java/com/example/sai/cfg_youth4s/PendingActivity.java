@@ -1,6 +1,5 @@
 package com.example.sai.cfg_youth4s;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
@@ -62,13 +61,12 @@ public class PendingActivity extends AppCompatActivity{
                     uploadInfo = ds.getValue(EventDetails.class);
                     arrayList.add(new EventDetails(uploadInfo.getImageurl(),uploadInfo.getEventname(),uploadInfo.getEventlocation(),uploadInfo.getStartdate(),uploadInfo.getStarttime()));
                 }
-                if(arrayList.isEmpty())
-                    startActivity(new Intent(PendingActivity.this,MainActivity.class));
+
                 for (EventDetails event : arrayList) {
                     boolean isFound = false;
                     // check if the event name exists in noRepeat
                     for (EventDetails e : NewarrayList) {
-                        if ((e.getImageurl().equals(event.getImageurl()))) {
+                        if ((e.getImageurl()).equals(event.getImageurl())) {
                             isFound = true;
                             break;
                         }

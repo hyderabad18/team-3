@@ -44,7 +44,6 @@ public class Enablement extends Fragment {
     // Creating List of ImageUploadInfo class.
     List<EventDetails> list = new ArrayList<>();
 
-    private String category=Enablement.this.getClass().getSimpleName();
 
     @Nullable
     @Override
@@ -96,8 +95,7 @@ public class Enablement extends Fragment {
 //                    SharedPreferences.Editor editor = preferences.edit();
 //                    editor.putString("Category",category);
 //                    editor.commit();
-                    Toast.makeText(getActivity(),category, Toast.LENGTH_SHORT).show();
-                    adapter = new EducationAdapter(getActivity(),list);
+                    adapter = new EnablementAdapter(getActivity(),list);
 
                 }
                 catch (IOException e)

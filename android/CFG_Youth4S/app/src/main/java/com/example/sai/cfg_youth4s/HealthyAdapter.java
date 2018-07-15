@@ -46,7 +46,7 @@ public class HealthyAdapter extends RecyclerView.Adapter<HealthyAdapter.MyViewHo
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_eventdetails, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_health, parent, false);
         HealthyAdapter.MyViewHolder viewHolder = new HealthyAdapter.MyViewHolder(view);
         return viewHolder;
     }
@@ -78,7 +78,7 @@ public class HealthyAdapter extends RecyclerView.Adapter<HealthyAdapter.MyViewHo
                 key = key.replaceAll("[^\\w\\s]","");
                 mFirebaseInstance = FirebaseDatabase.getInstance();
                 // get reference to 'users' node
-                mFirebaseDatabase = mFirebaseInstance.getReference(Database_Path).child(key).child("pending");
+                mFirebaseDatabase = mFirebaseInstance.getReference(Database_Path).child(key).child("events");
 
                 userId = mFirebaseDatabase.push().getKey();
 

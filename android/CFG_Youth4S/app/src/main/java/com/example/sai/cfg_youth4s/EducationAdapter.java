@@ -168,7 +168,7 @@ public class EducationAdapter extends RecyclerView.Adapter<EducationAdapter.MyVi
             date=(TextView)itemView.findViewById(R.id.date);
             time=(TextView)itemView.findViewById(R.id.timings);
             cd=(CardView)itemView.findViewById(R.id.card_view);
-            enroll=(Button)itemView.findViewById(R.id.enroll);
+            enroll=(Button)itemView.findViewById(R.id.enroll3);
             Typeface custom_font = Typeface.createFromAsset(context.getAssets(),"open.ttf");
 
             text.setTypeface(custom_font);

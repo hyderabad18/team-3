@@ -44,8 +44,6 @@ public class Environment extends Fragment {
     // Creating List of ImageUploadInfo class.
     List<EventDetails> list = new ArrayList<>();
 
-    private String category=Environment.this.getClass().getSimpleName();
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -96,8 +94,7 @@ public class Environment extends Fragment {
 //                    SharedPreferences.Editor editor = preferences.edit();
 //                    editor.putString("Category",category);
 //                    editor.commit();
-                    Toast.makeText(getActivity(),category, Toast.LENGTH_SHORT).show();
-                    adapter = new EducationAdapter(getActivity(),list);
+                    adapter = new EnvironmentAdapter(getActivity(),list);
 
                 }
                 catch (IOException e)

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
@@ -17,7 +18,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,7 +26,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     TabLayout tabLayout;
-    private Button add;
+    private FloatingActionButton add;
     private FirebaseAuth firebaseAuth;
     private TextView text;
 
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity
         // Give the TabLayout the ViewPager
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
-        add=(Button)findViewById(R.id.add);
+        add=(FloatingActionButton)findViewById(R.id.add);
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override

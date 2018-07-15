@@ -46,7 +46,7 @@ public class EnvironmentAdapter extends RecyclerView.Adapter<EnvironmentAdapter.
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_eventdetails, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_environment, parent, false);
         EnvironmentAdapter.MyViewHolder viewHolder = new EnvironmentAdapter.MyViewHolder(view);
         return viewHolder;
     }
@@ -78,7 +78,7 @@ public class EnvironmentAdapter extends RecyclerView.Adapter<EnvironmentAdapter.
                 key = key.replaceAll("[^\\w\\s]","");
                 mFirebaseInstance = FirebaseDatabase.getInstance();
                 // get reference to 'users' node
-                mFirebaseDatabase = mFirebaseInstance.getReference(Database_Path).child(key).child("pending");
+                mFirebaseDatabase = mFirebaseInstance.getReference(Database_Path).child(key).child("events");
 
                 userId = mFirebaseDatabase.push().getKey();
 
@@ -168,7 +168,7 @@ public class EnvironmentAdapter extends RecyclerView.Adapter<EnvironmentAdapter.
             date=(TextView)itemView.findViewById(R.id.date);
             time=(TextView)itemView.findViewById(R.id.timings);
             cd=(CardView)itemView.findViewById(R.id.card_view);
-            enroll=(Button)itemView.findViewById(R.id.enroll);
+            enroll=(Button)itemView.findViewById(R.id.enroll2);
             Typeface custom_font = Typeface.createFromAsset(context.getAssets(),"open.ttf");
 
             text.setTypeface(custom_font);

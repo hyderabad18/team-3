@@ -28,6 +28,10 @@
         "source": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\src\\main\\res\\layout\\activity_completed.xml"
     },
     {
+        "merged": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_health.xml",
+        "source": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\src\\main\\res\\layout\\activity_health.xml"
+    },
+    {
         "merged": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
@@ -212,6 +216,10 @@
         "source": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\src\\main\\res\\layout\\activity_addevents.xml"
     },
     {
+        "merged": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_emblement.xml",
+        "source": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\src\\main\\res\\layout\\activity_emblement.xml"
+    },
+    {
         "merged": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_action_menu_layout.xml"
     },
@@ -286,5 +294,9 @@
     {
         "merged": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
         "source": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_environment.xml",
+        "source": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\src\\main\\res\\layout\\activity_environment.xml"
     }
 ]

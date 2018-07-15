@@ -120,8 +120,8 @@ public class AddEvents extends AppCompatActivity{
                         ref1=databaseReference.child("Events").child("Environment");
                         break;
                     case 2 :
-                        Storage_Path = "Events/Helathy/";
-                        ref1=databaseReference.child("Events").child("Healthy");
+                        Storage_Path = "Events/Helath/";
+                        ref1=databaseReference.child("Events").child("Health");
                         break;
                     case 3 :
                         Storage_Path = "Events/Enable/";
