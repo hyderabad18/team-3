@@ -66,7 +66,7 @@ public class PendingActivity extends AppCompatActivity{
                     boolean isFound = false;
                     // check if the event name exists in noRepeat
                     for (EventDetails e : NewarrayList) {
-                        if ((e.getImageurl()).equals(event.getImageurl())) {
+                        if ((e.getImageurl().equals(event.getImageurl()))) {
                             isFound = true;
                             break;
                         }

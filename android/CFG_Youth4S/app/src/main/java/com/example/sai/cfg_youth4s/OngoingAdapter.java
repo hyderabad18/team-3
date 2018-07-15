@@ -62,8 +62,9 @@ public class OngoingAdapter extends BaseAdapter{
         email = email.replaceAll("[^\\w\\s]","");
 
         clear(listitem);
+        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference.child("Users").child(email).child("events").orderByChild("status").equalTo("1").
 
-        FirebaseDatabase.getInstance().getReference().child("Users").child(email).child("events").orderByChild("status").equalTo("1").
                 addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {

@@ -64,7 +64,7 @@ public class CompletedAdapter extends BaseAdapter{
         clear(listitem);
 
         FirebaseDatabase.getInstance().getReference().child("Users").child(email).child("events").orderByChild("status").equalTo("2").
-                addListenerForSingleValueEvent(new ValueEventListener() {
+                addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {

@@ -97,9 +97,12 @@ public class EnablementAdapter extends RecyclerView.Adapter<EnablementAdapter.My
 
                                         mFirebaseDatabase.child(userId).child("imageurl").setValue(details.getImageurl());
                                         mFirebaseDatabase.child(userId).child("eventname").setValue(details.getEventname());
-                                        mFirebaseDatabase.child(userId).child("location").setValue(details.getEventlocation());
-                                        mFirebaseDatabase.child(userId).child("date").setValue(details.getStartdate());
-                                        mFirebaseDatabase.child(userId).child("time").setValue(details.getStarttime());
+                                        mFirebaseDatabase.child(userId).child("eventlocation").setValue(details.getEventlocation());
+                                        mFirebaseDatabase.child(userId).child("startdate").setValue(details.getStartdate());
+                                        mFirebaseDatabase.child(userId).child("starttime").setValue(details.getStarttime());
+                                        mFirebaseDatabase.child(userId).child("enddate").setValue(" ");
+                                        mFirebaseDatabase.child(userId).child("eventdesc").setValue(" ");
+                                        mFirebaseDatabase.child(userId).child("status").setValue("0");
 
 //                                            holder.cd.setVisibility(View.GONE);
 

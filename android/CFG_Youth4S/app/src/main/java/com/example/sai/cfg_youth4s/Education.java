@@ -21,8 +21,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.util.Collections.reverse;
-
 /**
  * Created by sai on 14-07-2018.
  */
@@ -86,8 +84,7 @@ public class Education extends Fragment {
 
                     list.add(events);
                 }
-                
-                reverse(list);
+
                 try {
 //                    SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
 //                    SharedPreferences.Editor editor = preferences.edit();
