@@ -25,6 +25,9 @@ import java.util.List;
  * Created by sai on 14-07-2018.
  */
 public class Education extends Fragment {
+
+
+
     private String Database_Path = "Events/Education/";
 
     DatabaseReference databaseReference;
@@ -115,4 +118,5 @@ public class Education extends Fragment {
         });
         return rootview;
     }
+
 }
