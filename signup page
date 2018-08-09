@@ -1,6 +1,0 @@
-name(string(30))
-phone number(number(10))
-email(string(30))
-pwd(string(30))
-confirm password(string(30))
-date of birth(date)

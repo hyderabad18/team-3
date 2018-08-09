@@ -1,9 +1,9 @@
 package com.example.sai.cfg_youth4s;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,12 +30,17 @@ public class LoginActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
+        if(firebaseAuth.getCurrentUser()!=null)
+        {
+            startActivity(new Intent(LoginActivity.this,MainActivity.class));
+        }
+
         FontChangeCrawler fontChanger = new FontChangeCrawler(getAssets(), "open.ttf");
         fontChanger.replaceFonts((ViewGroup)this.findViewById(android.R.id.content));
 
         create = (Button)findViewById(R.id.sign_up_button);
         reset = (Button)findViewById(R.id.btn_reset_password);
-        login = (Button)findViewById(R.id.sign_in_button);
+        login = (Button)findViewById(R.id.login);
         ed1 = (EditText)findViewById(R.id.email);
         ed2 = (EditText)findViewById(R.id.password);
 
@@ -108,19 +113,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
     }
-    @Override
-    public void onStart() {
-        super.onStart();
-        firebaseAuth.addAuthStateListener(mAuthListener);
-    }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-        if (mAuthListener != null) {
-            firebaseAuth.removeAuthStateListener(mAuthListener);
-        }
-    }
     @Override
     public void onBackPressed() {
         Intent a = new Intent(Intent.ACTION_MAIN);

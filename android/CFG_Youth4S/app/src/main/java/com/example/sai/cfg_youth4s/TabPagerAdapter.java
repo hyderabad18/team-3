@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class TabPagerAdapter extends FragmentPagerAdapter {
     private Context context;
-    private String titles[]={"Education","Environment","Healthiness","Enablement"};
+    private String titles[]={"Education","Environment","Health","Enablement"};
     public TabPagerAdapter(FragmentManager fragmentManager)
     {
         super(fragmentManager);
@@ -18,8 +18,8 @@ public class TabPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        //if(position == 0)
-            //return new Education();
+        if(position == 0)
+            return new Education();
         if(position == 1)
             return new Environment();
         else if(position == 2)
@@ -27,7 +27,7 @@ public class TabPagerAdapter extends FragmentPagerAdapter {
         else if(position == 3)
             return new Enablement();
         else
-        return new Education();
+        return null;
     }
 
     @Override
