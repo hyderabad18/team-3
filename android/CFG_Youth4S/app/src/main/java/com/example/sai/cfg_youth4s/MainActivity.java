@@ -2,7 +2,10 @@ package com.example.sai.cfg_youth4s;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
@@ -14,10 +17,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     TabLayout tabLayout;
+    private FloatingActionButton add;
+    private FirebaseAuth firebaseAuth;
+    private TextView text;
 
 
     @Override
@@ -39,6 +50,14 @@ public class MainActivity extends AppCompatActivity
         // Give the TabLayout the ViewPager
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
+        add=(FloatingActionButton)findViewById(R.id.add);
+
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,ProfileActivity.class));
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -49,6 +68,9 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        String user1 = preferences.getString("email", "");
+        Toast.makeText(MainActivity.this,user1, Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -94,15 +116,31 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.complete) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+            startActivity(new Intent(MainActivity.this,CompletedActivity.class));
+        } else if (id == R.id.progress) {
+            startActivity(new Intent(MainActivity.this,OngoingActivity.class));
+        } else if (id == R.id.pending) {
+            startActivity(new Intent(MainActivity.this,PendingActivity.class));
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.share) {
+            try {
+                Intent i = new Intent(Intent.ACTION_SEND);
+                i.setType("text/plain");
+                i.putExtra(Intent.EXTRA_SUBJECT, "YouthforSeva");
+                String sAux = "\nLet me recommend you this application\n\n";
+                sAux = sAux + "https://play.google.com/store/apps/details?id=the.package.id \n\n";
+                i.putExtra(Intent.EXTRA_TEXT, sAux);
+                startActivity(Intent.createChooser(i, "choose one"));
+            } catch(Exception e) {
+                //e.toString();
+            }
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.logout) {
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(MainActivity.this,LoginActivity.class));
+            Toast.makeText(getApplicationContext(), "LoggedOut", Toast.LENGTH_SHORT).show();
 
         }
 

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wishlists"
+        android:layout_centerHorizontal="true"
+        android:text="My Profile"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#000"
+        android:textSize="25dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/wishlists"
+        android:id="@+id/lines"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/name"
+        android:layout_below="@+id/lines"
+        android:layout_marginLeft="40dp"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:id="@+id/dob"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:id="@+id/gender"
+        android:layout_below="@+id/dob"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Working hours"
+        android:id="@+id/hrs"
+        android:layout_below="@+id/gender"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:id="@+id/loc"
+        android:layout_below="@+id/hrs"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loc"
+        android:id="@+id/update"
+        android:layout_centerHorizontal="true"
+        android:text="Update"
+        android:layout_marginTop="40dp"/>
+</RelativeLayout>

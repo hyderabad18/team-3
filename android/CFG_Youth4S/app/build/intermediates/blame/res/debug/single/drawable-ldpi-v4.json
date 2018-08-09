@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_progress_bar.png",
+        "source": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_progress_bar.png"
+    },
+    {
+        "merged": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_complete.png",
+        "source": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_complete.png"
+    },
+    {
+        "merged": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_sand_clock.png",
+        "source": "C:\\Users\\sai\\Documents\\GitHub\\team-3\\android\\CFG_Youth4S\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_sand_clock.png"
+    }
+]
